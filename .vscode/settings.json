@@ -1,0 +1,43 @@
+{
+  "files.associations": {
+    "*.ejs": "html"
+  },
+  "emmet.includeLanguages": {
+    "ejs": "html"
+  },
+  "editor.colorizeCustomDecorators": true,
+  "workbench.colorCustomizations": {
+    "editor.background": "#1E1E1E",
+    "editor.foreground": "#D4D4D4",
+    "editor.selectionBackground": "#264F78",
+    "editor.lineHighlightBackground": "#2A2D2E"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["entity.name.tag", "punctuation.definition.tag"],
+        "settings": {
+          "foreground": "#569CD6"
+        }
+      },
+      {
+        "scope": ["string.quoted", "string.template"],
+        "settings": {
+          "foreground": "#CE9178"
+        }
+      },
+      {
+        "scope": ["entity.other.attribute-name"],
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
+      },
+      {
+        "scope": ["keyword.control.ejs"],
+        "settings": {
+          "foreground": "#C586C0"
+        }
+      }
+    ]
+  }
+}

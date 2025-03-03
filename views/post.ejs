@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ご意見・ご要望の投稿 | ○○市</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto px-4 py-6">
+    <header class="mb-6">
+      <h1 class="text-2xl font-bold text-center text-blue-700">ご意見・ご要望の投稿</h1>
+    </header>
+    
+    <div class="bg-white p-6 rounded shadow max-w-xl mx-auto">
+      <form action="/post" method="POST" class="space-y-4">
+        <div>
+          <label for="category" class="block mb-1 font-medium">カテゴリ</label>
+          <select id="category" name="category" class="w-full p-2 border rounded">
+            <option value="">カテゴリを選択してください</option>
+            <option value="道路・交通">道路・交通</option>
+            <option value="公園・施設">公園・施設</option>
+            <option value="ゴミ収集">ゴミ収集</option>
+            <option value="防災">防災</option>
+            <option value="福祉・健康">福祉・健康</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+        
+        <div>
+          <label for="title" class="block mb-1 font-medium">タイトル</label>
+          <input type="text" id="title" name="title" class="w-full p-2 border rounded" placeholder="タイトルを入力してください">
+        </div>
+        
+        <div>
+          <label for="message" class="block mb-1 font-medium">ご意見・ご要望</label>
+          <textarea id="message" name="message" rows="5" class="w-full p-2 border rounded" placeholder="内容を入力してください"></textarea>
+        </div>
+        
+        <div class="flex justify-between">
+          <a href="/" class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400">
+            戻る
+          </a>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            投稿する
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
